@@ -47,13 +47,34 @@ body{
 	overflow:auto;
 	overflow-x: hidden;
 }
-.msg_input{
+
+.msg_start{
+	background:white;
+	height:50;
+	font-size:12px;
+	padding:15px;
+	overflow:auto;
+	overflow-x: hidden;
+}
+
+.msg_start input, .msg_start button, .msg_input{
 	width:100%;
 	border: 1px solid white;
 	border-top:1px solid #DDDDDD;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;  
+}
+
+.msg_start input[name=name] {
+    padding: 5px;
+    border: solid 5px #c9c9c9;
+    transition: border 0.3s;
+}
+
+.msg_start input[name=name]:focus,
+.msg_start input[name=name].focus {
+    border: solid 5px #969696;
 }
 
 .close{
@@ -64,7 +85,6 @@ body{
 	float:right;
 	cursor:pointer;
 	padding-right:5px;
-	
 }
 
 .user{
